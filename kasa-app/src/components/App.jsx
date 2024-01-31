@@ -1,13 +1,13 @@
-import Header from "./Header";
+import Navbar from "./Navbar";
+import Banner from "./Banner";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div className="app">
+      <Navbar />
+      <Banner />
     </div>
   );
 }
 
 export default App;
-
-
