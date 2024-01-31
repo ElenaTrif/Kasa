@@ -1,0 +1,23 @@
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 209px;
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+
+  .logoFooter {
+    width: 122px;
+    height: 40px;
+  }
+
+  .textFooter {
+    color: white;
+    @media screen and (max-width: 375px) {
+      font-size: 12px;
+    }
+  }
+}
