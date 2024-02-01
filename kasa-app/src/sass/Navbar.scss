@@ -30,6 +30,9 @@
     & a {
       text-decoration: none;
       color: black;
+      &.underline {
+        text-decoration: underline;
+      }
     }
 
     & li {
@@ -44,7 +47,6 @@
     }
     & li:hover {
       cursor: pointer;
-      text-decoration-line: underline;
     }
   }
 }

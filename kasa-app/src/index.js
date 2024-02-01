@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./sass/index.scss";
 import App from "./components/App";
+import About from "./components/About";
+import Accomodations from "./components/Accomodations";
+import Error from "./components/Error";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -12,15 +15,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/accomodations",
-    element: <h1>Nos locations</h1>,
+    element: <Accomodations />,
   },
   {
     path: "/about",
-    element: <h1>A propos</h1>,
+    element: <About />,
   },
   {
     path: "/404",
-    element: <h1>404</h1>,
+    element: <Error />,
   },
 ]);
 

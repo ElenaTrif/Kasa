@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,10 +10,10 @@ const Navbar = () => {
       </div>
       <ul className="links">
         <li>
-          <Link to="/">Acceuil</Link>
+          <NavLink to="/" className={({isActive}) => (isActive ? "underline" : "")}>Acceuil</NavLink>
         </li>
         <li>
-          <Link to="/about">A Propos</Link>
+          <NavLink to="/about" className={({isActive}) => (isActive ? "underline" : "")}>A Propos</NavLink>
         </li>
       </ul>
     </nav>
