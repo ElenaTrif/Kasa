@@ -1,0 +1,16 @@
+.homePage {
+  max-width: 1240px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
+  }
+  @media screen and (max-width: 375px) {
+    padding: 0 1rem;
+  }
+}

@@ -4,9 +4,9 @@ import GalleryGrid from "./GalleryGrid";
 import Main from "./Main";
 import Footer from "./Footer";
 
-function App() {
+function HomePage() {
   return (
-    <div className="app">
+    <div className="homePage">
       <Navbar />
       <Main>
         <Banner />
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
