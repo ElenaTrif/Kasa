@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./sass/index.scss";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
-import AccomodationsPage from "./components/AccomodationsPage";
+import LocationsPage from "./components/LocationsPage";
 import ErrorPage from "./components/ErrorPage";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Routes } from "react-router-dom";
@@ -14,8 +14,8 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/accomodations",
-    element: <AccomodationsPage />,
+    path: "/location/:id",
+    element: <LocationsPage />,
   },
   {
     path: "/about",

@@ -5,11 +5,11 @@ import ApartementDescription from "./ApartementDescription";
 import ApartementBanner from "./ApartementBanner";
 import ApartementHeader from "./ApartementHeader";
 
-const AccomodationsPage = () => {
+const LocationsPage = () => {
   return (
     <div class="aboutPage">
       <Navbar />
-      <div className="accomodationsPage">
+      <div className="locationsPage">
         <ApartementBanner />
         <ApartementHeader />
         <div className="flat__area">
@@ -22,4 +22,4 @@ const AccomodationsPage = () => {
   );
 };
 
-export default AccomodationsPage;
+export default LocationsPage;
