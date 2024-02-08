@@ -1,14 +1,17 @@
 .flat__area {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   gap: 3rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    gap: 0;
+    gap: 1rem;
   }
 
   .flat__description {
-    
+    width: 100%;
+
     .description__title {
       background-color: rgba(255, 96, 96, 1);
       color: white;
@@ -24,6 +27,12 @@
         font-size: 13px;
         height: 40px;
       }
+
+      &.open {
+        .vectorUp {
+          transform: rotate(180deg); // Rotate the arrow downwards when open
+        }
+      }
     }
     .description__text {
       display: flex;
@@ -33,6 +42,11 @@
       position: relative;
       top: -1.3rem;
       z-index: -1;
+      ul li {
+        list-style: none;
+        text-align: left;
+        margin-left: -2rem;
+      }
     }
 
     .vectorUp {
@@ -43,6 +57,7 @@
       background-color: rgba(255, 96, 96, 1);
       color: white;
       cursor: pointer;
+      transition: transform 0.3s ease; // Add transition for smooth rotation
     }
   }
 }

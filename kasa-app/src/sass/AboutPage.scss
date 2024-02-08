@@ -1,3 +1,64 @@
 .aboutDescription {
-    padding-inline: 5rem;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 5rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .flat__description {
+    width: 100%;
+
+    .description__title {
+      background-color: rgba(255, 96, 96, 1);
+      color: white;
+      border-radius: 10px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      font-size: 18px;
+      font-weight: 700;
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+        height: 40px;
+      }
+
+      &.open {
+        .vectorUp {
+          transform: rotate(180deg); // Rotate the arrow downwards when open
+        }
+      }
+    }
+    .description__text {
+      display: flex;
+      background: rgba(246, 246, 246, 1);
+      border-radius: 10px;
+      padding: 1rem;
+      position: relative;
+      top: -1.3rem;
+      z-index: -1;
+      ul li {
+        list-style: none;
+      }
+    }
+
+    .vectorUp {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      margin-left: auto;
+      background-color: rgba(255, 96, 96, 1);
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease; // Add transition for smooth rotation
+    }
+  }
 }
