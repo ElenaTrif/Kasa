@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import BannerAbout from "./BannerAbout";
-import ApartementDescription from "./ApartementDescription";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import BannerAbout from "../components/BannerAbout";
+import ApartementDescription from "../components/ApartementDescription";
 
 const AboutPage = () => {
   return (

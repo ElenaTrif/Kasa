@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./sass/index.scss";
-import HomePage from "./components/HomePage";
-import AboutPage from "./components/AboutPage";
-import LocationsPage from "./components/LocationsPage";
-import ErrorPage from "./components/ErrorPage";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import LocationsPage from "./pages/LocationsPage";
+import ErrorPage from "./pages/ErrorPage";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Routes } from "react-router-dom";
 

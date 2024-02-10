@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import ApartementDescription from "./ApartementDescription";
-import Carrousel from "./Carrousel";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ApartementDescription from "../components/ApartementDescription";
+import Carrousel from "../components/Carrousel";
 
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
