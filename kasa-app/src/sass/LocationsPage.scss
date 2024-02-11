@@ -17,7 +17,135 @@
 
 .locationsPage {
   color: rgba(255, 96, 96, 1);
-  
+  padding: 0 5rem;
+  @media screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
+
+  .flat__header {
+    display: flex;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .flat__owner {
+      margin-top: 1.5rem;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      @media screen and (max-width: 768px) {
+        gap: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0;
+      }
+
+      .flat__owner__host {
+        display: flex;
+        gap: 0.5rem;
+
+        h3 {
+          display: flex;
+          text-align: right;
+          font-size: 18px;
+          font-weight: 500;
+          margin: 0;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 90px;
+
+          @media screen and (max-width: 768px) {
+            width: 80px;
+            font-size: 16px;
+          }
+        }
+
+        .flat__owner__host__badge img {
+          width: 65px;
+          height: 65px;
+          border-radius: 50px;
+          align-items: center;
+        }
+      }
+      .flat__owner__host__stars {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5em;
+        font-size: 36px;
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-top: -1rem;
+    padding-bottom: 0.4rem;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  .flat__tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0;
+
+    @media screen and (max-width: 768px) {
+      gap: 0.7rem;
+    }
+
+    span {
+      background-color: rgba(255, 96, 96, 1);
+      color: white;
+      padding: 0.3em 0.5em;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 0.4rem 0.1rem;
+      @media screen and (max-width: 768px) {
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+  .flat__area {
+    gap: 4.5rem;
+    @media screen and (max-width: 768px) {
+      gap: 1.25rem;
+    }
+  }
 }
-
-

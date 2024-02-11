@@ -62,8 +62,14 @@ const LocationsPage = () => {
         </div>
 
         <div className="flat__area">
-        <ApartementDescription title="Description" text={location.description} />
-        <ApartementDescription title="Equipements" items={location.equipments} />
+          <ApartementDescription
+            title="Description"
+            text={location.description}
+          />
+          <ApartementDescription
+            title="Equipements"
+            items={location.equipments}
+          />
         </div>
       </div>
       <Footer />

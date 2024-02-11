@@ -29,7 +29,10 @@ const Carrousel = ({ images }) => {
       />
       {showNavigation && (
         <>
-          <div className="arrow-carousel arrow-left" onClick={handleClickPrevious}>
+          <div
+            className="arrow-carousel arrow-left"
+            onClick={handleClickPrevious}
+          >
             <img src={arrowLeftImage} alt="Previous" />
           </div>
           <div className="arrow-carousel arrow-right" onClick={handleClickNext}>

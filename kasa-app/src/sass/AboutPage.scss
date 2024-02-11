@@ -1,8 +1,9 @@
-
 .aboutPage {
   margin: 0;
   padding: 0;
-}.aboutDescription {
+}
+
+.aboutDescription {
   display: flex;
   max-width: 100%;
   flex-direction: column;
@@ -12,8 +13,8 @@
   margin: 1rem 5rem;
 
   @media screen and (max-width: 768px) {
-    gap: 1rem;
-    margin: 1rem 0;
+    gap: 1.3rem;
+    margin: 0.5rem 0 0 0;
   }
 
   .flat__description {
@@ -64,5 +65,12 @@
       cursor: pointer;
       transition: transform 0.3s ease; // Add transition for smooth rotation
     }
+  }
+}
+
+.aboutContenue {
+  margin: 0 5rem;
+  @media screen and (max-width: 768px) {
+    margin: 0 1rem;
   }
 }

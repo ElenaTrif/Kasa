@@ -10,10 +10,20 @@ const Navbar = () => {
       </div>
       <ul className="links">
         <li>
-          <NavLink to="/" className={({isActive}) => (isActive ? "underline" : "")}>Acceuil</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "underline" : "")}
+          >
+            Acceuil
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className={({isActive}) => (isActive ? "underline" : "")}>A Propos</NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "underline" : "")}
+          >
+            A Propos
+          </NavLink>
         </li>
       </ul>
     </nav>

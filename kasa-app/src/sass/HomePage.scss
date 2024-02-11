@@ -5,13 +5,5 @@
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-
-  @media screen and (max-width: 768px) {
-    padding: 0;
-  }
-  @media screen and (max-width: 375px) {
-    padding: 0;
-  }
+  padding: 0;
 }
-
-

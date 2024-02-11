@@ -1,12 +1,16 @@
 .bannerAbout img {
   margin-bottom: 1rem;
-    width: 1240px;
-    width: 100%;
-    height: 415px;
-    object-fit: cover;
-    border-radius: 25px;
-    @media screen and (max-width: 768px) {
-      height: auto;
-      min-height: 255px;
-    }
+  width: 1240px;
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
+  @media screen and (max-width: 768px) {
+    height: 223px;
+    border-radius: 10px;
   }
+  @media screen and (max-width: 375px) {
+    height: 111px;
+    border-radius: 10px;
+  }
+}
