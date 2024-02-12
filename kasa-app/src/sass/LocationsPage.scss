@@ -89,6 +89,9 @@
           width: 20px;
           height: 20px;
         }
+        @media screen and (max-width: 375px) {
+          font-size: 14px;
+        }
 
         @media screen and (max-width: 768px) {
           order: -1;

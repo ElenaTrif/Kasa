@@ -10,6 +10,10 @@
     padding: 2rem 1rem;
   }
 
+  @media screen and (max-width: 375px) {
+    padding: 1.5rem 1rem;
+  }
+
   .navbar_logo {
     margin-right: auto;
     & img {
@@ -18,7 +22,7 @@
         width: 140px;
       }
       @media screen and (max-width: 375px) {
-        width: 140px;
+        width: 100px;
       }
     }
   }
@@ -31,6 +35,10 @@
     gap: 20px;
     @media screen and (max-width: 768px) {
       gap: 10px;
+    }
+
+    @media screen and (max-width: 375px) {
+      gap: 7px;
     }
 
     & a {
@@ -49,6 +57,7 @@
         font-size: 12px;
         text-transform: uppercase;
       }
+
     }
     & li:hover {
       cursor: pointer;

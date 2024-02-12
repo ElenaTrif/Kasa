@@ -15,6 +15,12 @@
     max-width: 100%;
   }
 
+  @media screen and (max-width: 375px) {
+    max-width: 335px;
+    height: 255px;
+    width: 100%;
+  }
+
   .titleAppartement {
     color: white;
     position: absolute;
