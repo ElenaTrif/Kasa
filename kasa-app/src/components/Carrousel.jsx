@@ -41,8 +41,10 @@ const Carrousel = ({ images }) => {
         </>
       )}
       {showNavigation && (
-        <div className="counter">
-          {currentImageIndex + 1} / {images.length}
+        <div className="counter-wrapper">
+          <div className="counter">
+            {currentImageIndex + 1} / {images.length}
+          </div>
         </div>
       )}
     </div>

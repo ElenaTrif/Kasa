@@ -41,6 +41,17 @@
       right: 0;
     }
   }
+  .counter-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .counter-wrapper {
+      display: none;
+    }
+  }
+
   .counter {
     position: absolute;
     bottom: 40px;
